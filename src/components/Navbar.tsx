@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { LIVE_URL } from '@/lib/constants'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -50,6 +51,14 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
+          <a
+            href={LIVE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-sky-500/60 bg-sky-500/10 px-4 py-1.5 text-xs font-semibold text-sky-300 shadow-sm transition hover:border-sky-400 hover:bg-sky-500/20 hover:text-sky-200"
+          >
+            Live
+          </a>
           <a
             href="#contact"
             className="rounded-full border border-slate-700 bg-slate-900/60 px-4 py-1.5 text-xs font-semibold text-slate-100 shadow-sm transition hover:border-sky-400 hover:text-sky-200"

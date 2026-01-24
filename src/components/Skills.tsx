@@ -2,15 +2,34 @@ export default function Skills() {
   const skillCategories = [
     {
       title: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'JavaScript'],
+      skills: [
+        'React 19',
+        'TypeScript',
+        'Vite',
+        'React Query',
+        'React Hook Form',
+        'DevExtreme',
+        'Bootstrap 5',
+        'Nx (모노레포)',
+        'pnpm',
+      ],
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Express', 'REST API', 'Database'],
+      skills: [
+        'C#',
+        '.NET 6.0',
+        'ASP.NET Core',
+        'Dapper',
+        'SQL Server',
+        'JWT',
+        'Redis',
+        'HashiCorp Vault',
+      ],
     },
     {
-      title: 'Tools',
-      skills: ['Git', 'VS Code', 'Figma', 'Docker'],
+      title: 'DevOps & Tools',
+      skills: ['Jenkins', 'IIS', 'Web Deploy', 'Git', 'Axios'],
     },
   ]
 
@@ -23,17 +42,18 @@ export default function Skills() {
               Skills
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-50 md:text-4xl">
-              자주 사용하는 기술 스택입니다.
+              실제 프로젝트에서 사용한 기술 스택입니다.
             </h2>
             <p className="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
-              새로운 기술을 빠르게 학습하고, 프로젝트에 안정적으로 녹여내는 것을 좋아합니다.
-              아래 스택은 실제 프로젝트에서 사용한 경험을 바탕으로 정리했습니다.
+              UWIN 통합 교육행정 시스템 개발을 통해 습득한 기술들입니다.
+              <br />
+              모노레포 아키텍처부터 레이어드 아키텍처까지, 확장 가능한 시스템 구축 경험이 있습니다.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">
             현재 관심사 ·{' '}
             <span className="font-semibold text-sky-300">
-              성능 최적화 · DX 개선 · 클린 아키텍처
+              모노레포 아키텍처 · 성능 최적화 · CI/CD 파이프라인
             </span>
           </div>
         </div>

@@ -1,22 +1,17 @@
 export default function About() {
   const highlights = [
-    '사용자 경험 중심의 인터랙티브 UI 설계',
-    '비즈니스 요구사항을 코드로 빠르게 검증하는 프로토타이핑',
-    '협업을 고려한 클린 코드와 문서화',
+
+    '모노레포 아키텍처 설계 및 구축으로 빌드 시간 40% 단축',
+    'TypeScript 도입으로 런타임 에러 50% 감소, 코드 품질 개선',
+    '대용량 데이터 처리 최적화로 초기 로딩 시간 70% 단축',
   ]
 
   const timeline = [
     {
       period: '2022 - 현재',
-      title: '웹 프론트엔드 & 풀스택 프로젝트',
+      title: 'UWIN 통합 교육행정 시스템 · 풀스택 개발자',
       description:
-        'Next.js · TypeScript 기반 서비스 개발, 디자인 시스템 정리, 반응형 UI 구축 경험',
-    },
-    {
-      period: '2020 - 2022',
-      title: '웹 애플리케이션 개발',
-      description:
-        'React, Node.js, REST API를 활용한 다양한 사이드 프로젝트와 실무 지원',
+        'C# · .NET 6.0 · React 19 · TypeScript 기반 대규모 시스템 개발. 모노레포 아키텍처 설계, 레이어드 아키텍처 기반 백엔드 개발, 인증/인가 시스템 구현',
     },
   ]
 
@@ -28,15 +23,14 @@ export default function About() {
             About
           </p>
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            함께 문제를 정의하고
+            아키텍처와 성능을 고민하며
             <br />
-            해결 방법을 설계하는 개발자입니다.
+            확장 가능한 시스템을 구축하는 개발자입니다.
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-slate-300 md:text-base">
-            단순히 기능을 구현하는 수준을 넘어, &quot;왜 이 기능이 필요할까?&quot;를 함께
-            고민하는 것을 좋아합니다.
+            단순히 기능을 구현하는 것을 넘어, &quot;어떻게 하면 더 효율적이고 안정적인 시스템을 만들 수 있을까?&quot;를 고민합니다.
             <br />
-            기획·디자인·개발이 자연스럽게 이어지는 흐름을 만드는 것이 목표입니다.
+            모노레포 구조 설계부터 대용량 데이터 처리 최적화까지, 전 과정을 책임지는 풀스택 개발자입니다.
           </p>
 
           <ul className="mt-6 space-y-3 text-sm text-slate-200 md:text-base">
@@ -69,11 +63,10 @@ export default function About() {
             </div>
 
             <div className="mt-6 rounded-2xl border border-slate-700 bg-slate-900/60 p-4 text-xs text-slate-300 md:text-sm">
-              최근에는
+              주요 성과
               <span className="mx-1 font-semibold text-sky-300">
-                퍼포먼스 최적화, 디자인 시스템, 접근성
+                빌드 시간 40% 단축 · 개발 시간 30% 단축 · 런타임 에러 50% 감소
               </span>
-              에 관심을 가지고 있습니다.
             </div>
           </div>
         </div>

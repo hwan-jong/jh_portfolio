@@ -1,3 +1,5 @@
+import { LIVE_URL } from '@/lib/constants'
+
 export default function Contact() {
   return (
     <section id="contact" className="bg-slate-950 py-20 px-4">
@@ -14,6 +16,18 @@ export default function Contact() {
             <br />
             아래 채널로 편하게 연락 주세요.
           </p>
+
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href={LIVE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-sky-500/60 bg-sky-500/10 px-4 py-2 text-xs font-medium text-sky-300 transition hover:border-sky-400 hover:bg-sky-500/20 hover:text-sky-200"
+            >
+              <span aria-hidden>🔗</span>
+              포트폴리오 배포 사이트
+            </a>
+          </div>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
             <a

@@ -16,20 +16,20 @@ export default function Hero() {
         <div className="flex-1">
           <div className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            포트폴리오 · Frontend & Fullstack Developer
+            포트폴리오 · 4년차 풀스택 개발자
           </div>
 
           <h1 className="mt-6 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-            <span className="block text-slate-200">사용자 경험을 설계하는</span>
+            <span className="block text-slate-200">아키텍처와 성능을 고민하는</span>
             <span className="mt-2 block bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-400 bg-clip-text text-transparent">
-              웹 개발자 포트폴리오
+              풀스택 개발자
             </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base text-slate-300 md:text-lg">
-            직관적인 UI와 안정적인 아키텍처를 동시에 고민하는 개발자입니다.
+            모노레포 아키텍처 설계부터 대용량 데이터 처리 최적화까지,
             <br />
-            제품의 가치를 높이는 프론트엔드 · 풀스택 경험을 정리했습니다.
+            확장 가능한 시스템을 구축하는 개발자입니다.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -50,11 +50,11 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-6 text-xs text-slate-400 md:text-sm">
             <div>
               <div className="font-semibold text-slate-200">경력</div>
-              <div className="mt-1">여러 프로젝트를 통한 실무형 경험</div>
+              <div className="mt-1">4년차 · UWIN 통합 교육행정 시스템</div>
             </div>
             <div>
               <div className="font-semibold text-slate-200">주요 스택</div>
-              <div className="mt-1">Next.js · TypeScript · Tailwind CSS</div>
+              <div className="mt-1">React 19 · .NET 6.0 · TypeScript · SQL Server</div>
             </div>
           </div>
         </div>
@@ -70,13 +70,13 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-wide text-slate-400">
-                    Portfolio Owner
+                    Fullstack Developer
                   </p>
                   <p className="text-lg font-semibold text-slate-100">
-                    당신의 이름
+                    4년차 개발자
                   </p>
                   <p className="text-xs text-slate-400">
-                    Frontend / Fullstack Developer
+                    Backend & Frontend
                   </p>
                 </div>
               </div>
@@ -87,8 +87,7 @@ export default function Hero() {
                     강점
                   </p>
                   <p className="text-sm">
-                    UI/UX에 민감한 프론트엔드와 안정적인 서버 설계까지, end-to-end로
-                    개발합니다.
+                    모노레포 아키텍처 설계, 대용량 데이터 처리 최적화, 레이어드 아키텍처 기반 백엔드 개발까지 전 과정을 담당합니다.
                   </p>
                 </div>
                 <div>
@@ -96,7 +95,7 @@ export default function Hero() {
                     자주 쓰는 기술
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['React', 'Next.js', 'TypeScript', 'Tailwind', 'Node.js'].map(
+                    {['React 19', 'TypeScript', '.NET 6.0', 'SQL Server', 'Dapper'].map(
                       (tech) => (
                         <span
                           key={tech}
@@ -112,11 +111,11 @@ export default function Hero() {
 
               <div className="mt-6 flex items-center justify-between border-t border-slate-800 pt-4 text-xs text-slate-400">
                 <div>
-                  <p className="font-semibold text-slate-200">오픈소스/사이드 프로젝트</p>
-                  <p>지속적으로 업데이트 중</p>
+                  <p className="font-semibold text-slate-200">현재 프로젝트</p>
+                  <p>UWIN 통합 교육행정 시스템</p>
                 </div>
                 <span className="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400">
-                  Available
+                  In Progress
                 </span>
               </div>
             </div>
