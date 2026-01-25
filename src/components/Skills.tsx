@@ -50,12 +50,13 @@ export default function Skills() {
               Skills
             </p>
             <h2 className="mt-3 text-3xl font-bold text-slate-50 md:text-4xl">
-              실제 프로젝트에서 사용한 기술 스택입니다.
+              문제를 해결하기 위해 선택하고 다듬어온 기술 스택입니다.
             </h2>
             <p className="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
-              대학/공공기관 정보시스템의 구축·고도화 프로젝트를 통해 사용한 기술들입니다.
+              대학/공공기관 정보시스템의 구축·고도화 프로젝트에서 직접 사용하며,
+              팀과 서비스의 맥락에 맞게 표준화·재사용·성능을 함께 고려했습니다.
               <br />
-              프론트(WebSquare/React)부터 백엔드(Spring/.NET), 데이터/트랜잭션/성능까지 end-to-end 경험이 있습니다.
+              프론트(WebSquare/React)부터 백엔드(Spring/.NET), 트랜잭션·보안·성능까지 end-to-end로 다뤄왔습니다.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">

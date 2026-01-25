@@ -19,7 +19,7 @@ export default function Projects() {
       period: '2024.12 ~ 2026.02',
       role: '풀스택 개발자',
       description:
-        '교육행정 전산시스템 고도화 프로젝트. 레이어드 아키텍처 기반 백엔드와 React 기반 프론트엔드를 개발하며, 인증/인가 및 성능 개선을 포함한 기능 확장과 안정화 작업을 수행했습니다.',
+        '교육행정 전산시스템 고도화. 레이어드 아키텍처 기반 백엔드와 React 기반 프론트엔드를 개발하며, 인증/보안 및 성능 개선을 포함한 기능 확장과 안정화 작업을 수행했습니다.',
       tech: [
         'C#',
         '.NET 6.0',
@@ -69,9 +69,9 @@ export default function Projects() {
       title: '마산대학교 차세대 통합정보시스템 구축 용역',
       client: '마산대학교',
       period: '2022.02 ~ 2024.09',
-      role: '학사업무 개발자(초급) · 현장실습 파트 오너',
+      role: '학사업무 개발자',
       description:
-        '대학 통합 정보시스템 구축(2년/25억/51명). 학사업무 모듈 전반 개발에 참여했고, 현장실습 파트는 “기본정보 → 계획 → 승인 → 진행 → 평가·만족도·성찰”의 전체 업무 흐름과 정합성을 책임 관리했습니다.',
+        '대학 통합 정보시스템 구축. 학사업무 모듈 전반 개발에 참여했고, 현장실습 파트는 “기본정보 → 계획 → 승인 → 진행 → 평가·만족도·성찰” 흐름이 끊기지 않도록 단계 간 연계/정합성을 책임 관리했습니다.',
       tech: ['WebSquare', 'Spring Boot 2.5.3', 'Java', 'MyBatis', 'Gradle', 'SonarQube', 'GitLab'],
       achievements: [
         '현장실습 전 과정 업무 흐름 정의 및 단계 간 데이터 연계/정합성 책임',
@@ -107,10 +107,10 @@ export default function Projects() {
               실제 프로젝트에서 구현한 시스템들입니다.
             </h2>
             <p className="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
-              대학/공공기관 정보시스템의 구축·고도화 프로젝트를 바탕으로,
-              아키텍처 설계부터 인증/보안, 성능 개선까지 전 과정을 경험했습니다.
+              단순히 “기능을 만든 경험”을 넘어서,
+              업무 흐름이 끊기지 않도록 설계하고 운영 관점에서 개선해 온 과정을 담았습니다.
               <br />
-              단순 기능 구현을 넘어 확장성과 유지보수성을 고려한 개발을 진행했습니다.
+              아키텍처·트랜잭션·인증/보안·성능을 함께 고려하며 안정적인 시스템을 만드는 데 집중했습니다.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">
@@ -132,16 +132,18 @@ export default function Projects() {
                   <span className="rounded-full bg-slate-800 px-2 py-1 text-[11px] font-medium">
                     {index + 1 < 10 ? `0${index + 1}` : index + 1}
                   </span>
-                  {project.client && (
-                    <span className="rounded-full bg-slate-800/70 px-2.5 py-1 text-[11px] font-semibold text-slate-200">
-                      {project.client}
-                    </span>
-                  )}
-                  {isHighlight && !project.client && (
-                    <span className="rounded-full bg-sky-500/15 px-2.5 py-1 text-[11px] font-semibold text-sky-300">
-                      대표 프로젝트
-                    </span>
-                  )}
+                  <div className="flex items-center gap-2">
+                    {project.client && (
+                      <span className="rounded-full bg-slate-800/70 px-2.5 py-1 text-[11px] font-semibold text-slate-200">
+                        {project.client}
+                      </span>
+                    )}
+                    {isHighlight && (
+                      <span className="rounded-full bg-sky-500/15 px-2.5 py-1 text-[11px] font-semibold text-sky-300">
+                        대표 프로젝트
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 <h3 className="text-xl font-semibold text-slate-50 md:text-2xl">

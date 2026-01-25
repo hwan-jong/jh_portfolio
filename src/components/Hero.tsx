@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-6 text-xs text-slate-400 md:text-sm">
             <div>
               <div className="font-semibold text-slate-200">경력</div>
-              <div className="mt-1">4년차 · UWIN 통합 교육행정 시스템</div>
+              <div className="mt-1">4년차 · 울산대학교 전산시스템 고도화(글로컬 2·3차)</div>
             </div>
             <div>
               <div className="font-semibold text-slate-200">주요 스택</div>
@@ -112,7 +112,7 @@ export default function Hero() {
               <div className="mt-6 flex items-center justify-between border-t border-slate-800 pt-4 text-xs text-slate-400">
                 <div>
                   <p className="font-semibold text-slate-200">현재 프로젝트</p>
-                  <p>UWIN 통합 교육행정 시스템</p>
+                  <p>울산대학교 전산시스템 고도화(글로컬 2·3차)</p>
                 </div>
                 <span className="rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400">
                   In Progress

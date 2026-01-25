@@ -12,9 +12,9 @@ export default function Contact() {
             함께 만들고 싶은 서비스가 있으신가요?
           </h2>
           <p className="mt-4 text-sm text-slate-300 md:text-base">
-            새로운 아이디어, 프로젝트, 협업 제안 모두 환영합니다.
+            새로운 아이디어, 고도화 과제, 협업 제안 모두 환영합니다.
             <br />
-            아래 채널로 편하게 연락 주세요.
+            문제를 빠르게 정의하고, 현실적인 범위에서 꾸준히 개선해 나가는 방식으로 함께하겠습니다.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
