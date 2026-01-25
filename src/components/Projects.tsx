@@ -1,55 +1,97 @@
+type Project = {
+  title: string
+  description: string
+  period: string
+  client?: string
+  role?: string
+  tech?: string[]
+  achievements?: string[]
+  responsibilities?: string[]
+  link?: string
+  highlight?: boolean
+}
+
 export default function Projects() {
-  const projects = [
+  const projects: Project[] = [
     {
-      title: 'UWIN 통합 교육행정 시스템',
+      title: '글로컬대학 실행계획서 기반 전산시스템 고도화 (2차·3차)',
+      client: '울산대학교',
+      period: '2024.12 ~ 2026.02',
+      role: '풀스택 개발자',
       description:
-        '울산대학교 통합 교육행정 시스템 개발 프로젝트. 모노레포 아키텍처 기반으로 다중 도메인(GEFF, SCFF, ADFF, ECFF) 모듈을 관리하는 대규모 시스템입니다. 레이어드 아키텍처 기반 백엔드와 React 19 기반 프론트엔드를 개발하며, 빌드 시간 40% 단축, 런타임 에러 50% 감소 등의 성과를 달성했습니다.',
+        '교육행정 전산시스템 고도화 프로젝트. 레이어드 아키텍처 기반 백엔드와 React 기반 프론트엔드를 개발하며, 인증/인가 및 성능 개선을 포함한 기능 확장과 안정화 작업을 수행했습니다.',
       tech: [
-        'React 19',
-        'TypeScript',
-        '.NET 6.0',
         'C#',
+        '.NET 6.0',
+        'ASP.NET Core Web API',
         'Dapper',
         'SQL Server',
         'Redis',
-        'Nx',
+        'HashiCorp Vault',
+        'React',
+        'TypeScript',
+        'Vite',
+        'React Query',
+        'DevExtreme',
         'Jenkins',
+        'IIS',
       ],
-      link: '#',
-      period: '2022 - 현재',
-      role: '풀스택 개발자 (4년차)',
       achievements: [
-        '모노레포 아키텍처 설계로 빌드 시간 40% 단축',
-        'TypeScript 도입으로 런타임 에러 50% 감소',
-        '대용량 데이터 처리 최적화로 초기 로딩 시간 70% 단축',
-        '공통 컴포넌트 라이브러리로 개발 시간 30% 단축',
+        'JWT + Cookie 기반 하이브리드 인증 및 SSO 연동 경험',
+        'CSRF 보호 필터 구현 및 보안 설정 강화',
+        '대용량 그리드 렌더링 최적화(가상 스크롤/페이징) 및 불필요한 호출 감소',
       ],
       responsibilities: [
-        '모노레포 아키텍처 설계 및 구축 (pnpm workspace, Nx)',
-        '레이어드 아키텍처 기반 백엔드 개발 (Controller → Service → Repository)',
-        'React 19 + TypeScript 기반 프론트엔드 개발',
-        'JWT + Cookie 기반 인증/인가 시스템 구현',
-        'CI/CD 파이프라인 구축 (Jenkins)',
-        '성능 최적화 및 코드 리뷰',
+        'Controller → Service → Repository 레이어드 아키텍처 기반 백엔드 개발',
+        '트랜잭션 처리/에러 핸들링 표준화 및 데이터 무결성 보장',
+        'React + TypeScript 기반 화면/폼/그리드 기능 구현',
+        'CI/CD 파이프라인(Jenkins) 및 배포(IIS/Web Deploy) 흐름 대응',
+      ],
+      highlight: true,
+    },
+    {
+      title: '금융인증서(개인/사업자) 도입',
+      client: '기술보증기금',
+      period: '2025.03 ~ 2025.09',
+      role: '개발',
+      description:
+        '금융인증서(개인/사업자) 도입을 위한 기능 개발 및 연동/검증 업무를 수행했습니다.',
+    },
+    {
+      title: '산학협력통합정보시스템(UNI-ON) 기능 개선 및 성능 강화',
+      client: '강원대학교 산학협력단',
+      period: '2024.08 ~ 2024.11',
+      role: '개발',
+      description:
+        '산학협력통합정보시스템의 기능 개선 및 성능 강화를 위한 개선 작업을 수행했습니다.',
+    },
+    {
+      title: '마산대학교 차세대 통합정보시스템 구축 용역',
+      client: '마산대학교',
+      period: '2022.02 ~ 2024.09',
+      role: '학사업무 개발자(초급) · 현장실습 파트 오너',
+      description:
+        '대학 통합 정보시스템 구축(2년/25억/51명). 학사업무 모듈 전반 개발에 참여했고, 현장실습 파트는 “기본정보 → 계획 → 승인 → 진행 → 평가·만족도·성찰”의 전체 업무 흐름과 정합성을 책임 관리했습니다.',
+      tech: ['WebSquare', 'Spring Boot 2.5.3', 'Java', 'MyBatis', 'Gradle', 'SonarQube', 'GitLab'],
+      achievements: [
+        '현장실습 전 과정 업무 흐름 정의 및 단계 간 데이터 연계/정합성 책임',
+        '다단계 승인 워크플로우 구현 및 변경 영향 범위 관리',
+        'MyBatis 동적 쿼리/조인 최적화 및 대용량 페이징 적용',
+        'Spring Transaction 기반 트랜잭션 경계 설정 및 롤백 처리로 데이터 무결성 보장',
+      ],
+      responsibilities: [
+        '학사업무 모듈(mu-bach) 기능 개발/유지보수(학적/수강/성적/교과/신청 등)',
+        '현장실습 파트: 교통비 책정표, 기본정보, 계획/승인, 진행, 만족도/성찰 기능 개발',
+        'REST API 설계/구현 및 예외 처리 표준화',
+        '요구사항 변경 시 전체 프로세스 영향 분석 및 화면/기능 일관성 유지',
       ],
     },
     {
-      title: '일정 관리 시스템 (UME003)',
-      description:
-        '학사 일정 등록/조회/수정/삭제 기능을 제공하는 시스템입니다. DevExtreme DataGrid를 활용한 대용량 데이터 처리와 React Hook Form 기반 폼 검증을 구현했습니다.',
-      tech: ['React 19', 'TypeScript', '.NET 6.0', 'SQL Server', 'DevExtreme'],
-      link: '#',
-      period: '2022 - 현재',
-      role: '풀스택 개발자',
-    },
-    {
-      title: '예산 관리 시스템',
-      description:
-        '예산 편성, 집행, 결산 프로세스를 관리하는 시스템입니다. 복잡한 비즈니스 규칙을 프로시저와 서비스 레이어로 분리하여 구현했으며, 대용량 데이터 일괄 처리 기능을 포함합니다.',
-      tech: ['React 19', 'TypeScript', '.NET 6.0', 'Dapper', 'SQL Server'],
-      link: '#',
-      period: '2022 - 현재',
-      role: '풀스택 개발자',
+      title: '경북대학교 차세대 통합정보시스템 구축 용역 사업',
+      client: '경북대학교',
+      period: '2021.11 ~ 2022.02',
+      role: '개발 참여',
+      description: '차세대 통합정보시스템 구축 프로젝트에 참여했습니다.',
     },
   ]
 
@@ -65,19 +107,20 @@ export default function Projects() {
               실제 프로젝트에서 구현한 시스템들입니다.
             </h2>
             <p className="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
-              대규모 교육행정 시스템 개발을 통해 아키텍처 설계부터 성능 최적화까지 전 과정을 경험했습니다.
+              대학/공공기관 정보시스템의 구축·고도화 프로젝트를 바탕으로,
+              아키텍처 설계부터 인증/보안, 성능 개선까지 전 과정을 경험했습니다.
               <br />
               단순 기능 구현을 넘어 확장성과 유지보수성을 고려한 개발을 진행했습니다.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">
-            팀 규모 · 8명 (백엔드 4명, 프론트엔드 3명, 인프라 1명)
+            프로젝트 기간 · 2021.11 ~ 2026.02
           </div>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {projects.map((project, index) => {
-            const isHighlight = index === 0
+            const isHighlight = project.highlight ?? index === 0
             return (
               <article
                 key={project.title}
@@ -89,7 +132,12 @@ export default function Projects() {
                   <span className="rounded-full bg-slate-800 px-2 py-1 text-[11px] font-medium">
                     {index + 1 < 10 ? `0${index + 1}` : index + 1}
                   </span>
-                  {isHighlight && (
+                  {project.client && (
+                    <span className="rounded-full bg-slate-800/70 px-2.5 py-1 text-[11px] font-semibold text-slate-200">
+                      {project.client}
+                    </span>
+                  )}
+                  {isHighlight && !project.client && (
                     <span className="rounded-full bg-sky-500/15 px-2.5 py-1 text-[11px] font-semibold text-sky-300">
                       대표 프로젝트
                     </span>
@@ -131,23 +179,25 @@ export default function Projects() {
                   </div>
                 )}
 
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full bg-slate-800 px-2.5 py-1 text-[11px] text-slate-100 ring-1 ring-slate-700/70 group-hover:bg-sky-500/10 group-hover:text-sky-200 group-hover:ring-sky-400/60"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                {project.tech?.length ? (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full bg-slate-800 px-2.5 py-1 text-[11px] text-slate-100 ring-1 ring-slate-700/70 group-hover:bg-sky-500/10 group-hover:text-sky-200 group-hover:ring-sky-400/60"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
 
                 <div className="mt-5 flex items-center justify-between text-xs text-slate-400">
                   <span>
-                    {project.period && `${project.period} · `}
-                    {project.role || '풀스택 개발자'}
+                    {project.period}
+                    {project.role ? ` · ${project.role}` : ''}
                   </span>
-                  {project.link !== '#' && (
+                  {project.link && project.link !== '#' && (
                     <a
                       href={project.link}
                       target="_blank"

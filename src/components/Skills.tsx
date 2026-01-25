@@ -3,6 +3,9 @@ export default function Skills() {
     {
       title: 'Frontend',
       skills: [
+        'WebSquare',
+        'JavaScript',
+        'HTML/CSS',
         'React 19',
         'TypeScript',
         'Vite',
@@ -17,6 +20,11 @@ export default function Skills() {
     {
       title: 'Backend',
       skills: [
+        'Java',
+        'Spring Boot 2.5.3',
+        'Spring Security',
+        'Spring Transaction',
+        'MyBatis',
         'C#',
         '.NET 6.0',
         'ASP.NET Core',
@@ -29,7 +37,7 @@ export default function Skills() {
     },
     {
       title: 'DevOps & Tools',
-      skills: ['Jenkins', 'IIS', 'Web Deploy', 'Git', 'Axios'],
+      skills: ['Jenkins', 'IIS', 'Web Deploy', 'Gradle', 'Git/GitLab', 'SonarQube', 'Axios'],
     },
   ]
 
@@ -45,9 +53,9 @@ export default function Skills() {
               실제 프로젝트에서 사용한 기술 스택입니다.
             </h2>
             <p className="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
-              UWIN 통합 교육행정 시스템 개발을 통해 습득한 기술들입니다.
+              대학/공공기관 정보시스템의 구축·고도화 프로젝트를 통해 사용한 기술들입니다.
               <br />
-              모노레포 아키텍처부터 레이어드 아키텍처까지, 확장 가능한 시스템 구축 경험이 있습니다.
+              프론트(WebSquare/React)부터 백엔드(Spring/.NET), 데이터/트랜잭션/성능까지 end-to-end 경험이 있습니다.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">
