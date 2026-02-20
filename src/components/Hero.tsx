@@ -50,11 +50,11 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-6 text-xs text-slate-400 md:text-sm">
             <div>
               <div className="font-semibold text-slate-200">경력</div>
-              <div className="mt-1">4년차 · 울산대학교 전산시스템 고도화(글로컬 2·3차)</div>
+              <div className="mt-1">4년차 · 대학/공공 프로젝트 5건(2021.11 ~ 2026.02)</div>
             </div>
             <div>
               <div className="font-semibold text-slate-200">주요 스택</div>
-              <div className="mt-1">React 19 · .NET 6.0 · TypeScript · SQL Server</div>
+              <div className="mt-1">Java · Spring Boot · Oracle · MyBatis · React/WebSquare</div>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default function Hero() {
                     자주 쓰는 기술
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['React 19', 'TypeScript', '.NET 6.0', 'SQL Server', 'Dapper'].map(
+                    {['Java', 'Spring Boot', 'Oracle', 'MyBatis', 'React', 'WebSquare'].map(
                       (tech) => (
                         <span
                           key={tech}
