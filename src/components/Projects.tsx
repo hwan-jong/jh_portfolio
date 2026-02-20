@@ -83,7 +83,7 @@ export default function Projects() {
       ],
       responsibilities: [
         'pageNum/pageSize 기준 페이징 쿼리 정비',
-        'checkValidate + save 구조로 저장 로직 분리',
+        '검증 단계와 저장 단계를 분리해 저장 로직 정비',
         '권한관리/승인/기업정보 저장 실패 분기 정리',
       ],
     },
@@ -102,7 +102,7 @@ export default function Projects() {
         'Spring Transaction 기반 트랜잭션 경계 설정 및 롤백 처리로 데이터 무결성 보장',
       ],
       responsibilities: [
-        '학사업무 모듈(mu-bach) 기능 개발/유지보수(학적/수강/성적/교과/신청 등)',
+        '학사업무 모듈(내부 모듈명: mu-bach) 기능 개발/유지보수(학적/수강/성적/교과/신청 등)',
         '현장실습 파트: 교통비 책정표, 기본정보, 계획/승인, 진행, 만족도/성찰 기능 개발',
         'REST API 설계/구현 및 예외 처리 표준화',
         '요구사항 변경 시 전체 프로세스 영향 분석 및 화면/기능 일관성 유지',

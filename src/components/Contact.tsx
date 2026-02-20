@@ -31,14 +31,14 @@ export default function Contact() {
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:pass1039@naver.com"
               className="inline-flex items-center justify-center rounded-full bg-sky-500 px-7 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400"
             >
               이메일로 연락하기
             </a>
             <div className="flex gap-3">
               <a
-                href="https://github.com"
+                href="https://github.com/hwan-jong"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-sky-400 hover:text-sky-200"
@@ -46,7 +46,7 @@ export default function Contact() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/hwan-jong/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-sky-500/70 bg-slate-900/70 px-4 py-2 text-xs font-medium text-sky-300 transition hover:border-sky-300 hover:text-sky-100"
@@ -57,7 +57,7 @@ export default function Contact() {
           </div>
 
           <p className="mt-6 text-xs text-slate-500">
-            이메일 주소와 링크는 실제 사용하는 정보로 교체해서 사용하세요.
+            연락은 이메일 또는 LinkedIn으로 부탁드립니다.
           </p>
         </div>
       </div>

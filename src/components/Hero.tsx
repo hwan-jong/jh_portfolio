@@ -66,11 +66,11 @@ export default function Hero() {
             <div className="relative rounded-3xl border border-slate-700/70 bg-slate-900/80 p-6 shadow-2xl backdrop-blur">
               <div className="flex items-center gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-500 text-2xl font-bold text-slate-950">
-                  Dev
+                  JH
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-wide text-slate-400">
-                    Fullstack Developer
+                    Full-stack Developer
                   </p>
                   <p className="text-lg font-semibold text-slate-100">
                     4년차 개발자

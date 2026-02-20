@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { LIVE_URL } from '@/lib/constants'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -19,7 +18,6 @@ export default function Navbar() {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
   ]
 
   return (
@@ -33,11 +31,11 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-indigo-500 text-xs font-bold text-slate-950">
-            Dev
+            JH
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-semibold text-slate-100">Portfolio</span>
-            <span className="text-[11px] text-slate-400">Frontend / Fullstack Developer</span>
+            <span className="text-[11px] text-slate-400">Frontend / Full-stack Developer</span>
           </div>
         </div>
 
@@ -51,20 +49,6 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
-          <a
-            href={LIVE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full border border-sky-500/60 bg-sky-500/10 px-4 py-1.5 text-xs font-semibold text-sky-300 shadow-sm transition hover:border-sky-400 hover:bg-sky-500/20 hover:text-sky-200"
-          >
-            Live
-          </a>
-          <a
-            href="#contact"
-            className="rounded-full border border-slate-700 bg-slate-900/60 px-4 py-1.5 text-xs font-semibold text-slate-100 shadow-sm transition hover:border-sky-400 hover:text-sky-200"
-          >
-            Hire me
-          </a>
         </div>
       </div>
     </nav>
