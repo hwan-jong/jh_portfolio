@@ -1,3 +1,11 @@
+type ProjectPhase = {
+  title: string
+  period: string
+  subtitle: string
+  responsibilities: string[]
+  tech: string[]
+}
+
 type Project = {
   title: string
   description: string
@@ -7,6 +15,7 @@ type Project = {
   tech?: string[]
   achievements?: string[]
   responsibilities?: string[]
+  phases?: ProjectPhase[]
   link?: string
   highlight?: boolean
 }
@@ -17,35 +26,45 @@ export default function Projects() {
       title: '글로컬대학 실행계획서 기반 전산시스템 고도화 (2차·3차)',
       client: '울산대학교',
       period: '2024.12 ~ 2026.02',
-      role: '풀스택 개발자',
+      role: '백엔드 중심 · 운영 개선/공통화',
       description:
-        '교육행정 전산시스템 고도화. 레이어드 아키텍처 기반 백엔드와 React 기반 프론트엔드를 개발하며, 인증/보안 및 성능 개선을 포함한 기능 확장과 안정화 작업을 수행했습니다.',
-      tech: [
-        'C#',
-        '.NET 6.0',
-        'ASP.NET Core Web API',
-        'Dapper',
-        'SQL Server',
-        'Redis',
-        'HashiCorp Vault',
-        'React',
-        'TypeScript',
-        'Vite',
-        'React Query',
-        'DevExtreme',
-        'Jenkins',
-        'IIS',
-      ],
-      achievements: [
-        'JWT + Cookie 기반 하이브리드 인증 및 SSO 연동 경험',
-        'CSRF 보호 필터 구현 및 보안 설정 강화',
-        '대용량 그리드 렌더링 최적화(가상 스크롤/페이징) 및 불필요한 호출 감소',
-      ],
-      responsibilities: [
-        'Controller → Service → Repository 레이어드 아키텍처 기반 백엔드 개발',
-        '트랜잭션 처리/에러 핸들링 표준화 및 데이터 무결성 보장',
-        'React + TypeScript 기반 화면/폼/그리드 기능 구현',
-        'CI/CD 파이프라인(Jenkins) 및 배포(IIS/Web Deploy) 흐름 대응',
+        '교육행정 전산시스템 고도화 프로젝트입니다. 2차에서는 레거시(WebForms) 기반 운영 개선을, 3차에서는 React/TypeScript 기반 공통파트(탭·권한·API·그리드/파일) 고도화를 수행했습니다. 아래 내용은 제가 참여한 범위 기준입니다.',
+      phases: [
+        {
+          title: '2차 (2024.12 ~ 2025.02)',
+          period: '레거시(WebForms) 고도화',
+          subtitle: '운영 개선 중심',
+          responsibilities: [
+            '메뉴/탭(iframe) 기반 포털 동작 유지보수 및 UI/동작 이슈 수정',
+            '공통 API(JS 래퍼 → WebMethod → SP) 흐름과 API 모듈(.NET 6/ASP.NET Core, Dapper) 일부 유지보수에서 실패/예외 케이스 처리 정비',
+            '파일/엑셀 업·다운로드 공통 로직 보완(검증/오류 케이스 대응)',
+            '인증/세션/CSRF 토큰 주입 설정 정비 및 Jenkins/Web Deploy 배포 흐름 내 운영 대응/개선',
+          ],
+          tech: [
+            'ASP.NET WebForms(.NET Framework)',
+            'C#',
+            'jQuery',
+            'DevExtreme/DevExpress',
+            'SQL Server',
+            'IIS',
+            'ASP.NET Core API(.NET 6)',
+            'Dapper',
+            'HashiCorp Vault(시크릿 조회/권한)',
+            'Jenkins/Web Deploy(운영 대응)',
+          ],
+        },
+        {
+          title: '3차 (2025.10 ~ 2026.02, In Progress)',
+          period: 'React/TypeScript 공통파트 고도화',
+          subtitle: '공통 컴포넌트/표준화 중심',
+          responsibilities: [
+            'axios 공통 API 레이어/인터셉터로 인증 헤더/401 처리/로딩 표준화',
+            '탭 기반 내비게이션 공통화(중복 방지/닫기/고정/리로드)',
+            'DevExtreme 기반 공통 Grid 및 파일/엑셀 컴포넌트 표준화',
+            '운영 이슈 기준으로 공통 파트 우선순위 정리 및 적용 범위 문서화',
+          ],
+          tech: ['React 19', 'TypeScript', 'Vite', 'React Query', 'Axios', 'DevExtreme', 'pnpm/NX'],
+        },
       ],
       highlight: true,
     },
@@ -53,14 +72,14 @@ export default function Projects() {
       title: '금융인증서(개인/사업자) 도입',
       client: '기술보증기금',
       period: '2025.03 ~ 2025.09',
-      role: '풀스택 개발(협업 지원)',
+      role: '백엔드/프론트 연동 지원',
       description:
         '금융인증서(개인/사업자) 도입을 위한 기능 개발 및 연동/검증 업무를 수행했습니다. 리다이렉트 기반 인증 흐름과 실패 케이스 처리 기준을 정리해 운영 반영을 지원했습니다.',
       tech: ['Spring 기반 API', 'React', 'TypeScript', '금융인증 SDK 연동'],
       achievements: [
         '인증 실패/취소/재요청 케이스 처리 기준을 정리해 운영 전달 품질 개선',
         '통합 테스트 케이스 및 결과서 작성으로 반영 전 검증 체계 보강',
-        '보안상 상세 비공개(협업 지원 성격)',
+        '보안 정책상 세부 내용은 대외 비공개이며, 면접에서 범위 내 설명 가능합니다.',
       ],
       responsibilities: [
         '금융인증 SDK 연동 및 전자서명/본인인증(개인·사업자) 흐름 전환',
@@ -93,10 +112,10 @@ export default function Projects() {
       period: '2022.02 ~ 2024.09',
       role: '학사업무 개발자',
       description:
-        '대학 통합 정보시스템 구축. 학사업무 모듈 전반 개발에 참여했고, 현장실습 파트는 “기본정보 → 계획 → 승인 → 진행 → 평가·만족도·성찰” 흐름이 끊기지 않도록 단계 간 연계/정합성을 책임 관리했습니다.',
+        '대학 통합 정보시스템 구축. 학사업무 모듈 전반 개발에 참여했고, 현장실습 파트는 단계 간 연계가 끊기지 않도록 데이터 흐름과 저장/검증 기준을 정리했고, 정합성 이슈를 줄이는 데 집중했습니다.',
       tech: ['WebSquare', 'Spring Boot 2.5.3', 'Java', 'MyBatis', 'Gradle', 'SonarQube', 'GitLab'],
       achievements: [
-        '현장실습 전 과정 업무 흐름 정의 및 단계 간 데이터 연계/정합성 책임',
+        '현장실습 전 과정 업무 흐름 정리 및 단계 간 데이터 연계/정합성 이슈 최소화(검증/롤백 기준 정비)',
         '다단계 승인 워크플로우 구현 및 변경 영향 범위 관리',
         'MyBatis 동적 쿼리/조인 최적화 및 대용량 페이징 적용',
         'Spring Transaction 기반 트랜잭션 경계 설정 및 롤백 처리로 데이터 무결성 보장',
@@ -147,7 +166,7 @@ export default function Projects() {
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">
-            프로젝트 기간 · 2021.11 ~ 2026.02
+            프로젝트 기간 · 2021.09 ~ 2026.02
           </div>
         </div>
 
@@ -185,6 +204,51 @@ export default function Projects() {
                 <p className="mt-3 text-sm leading-relaxed text-slate-300">
                   {project.description}
                 </p>
+
+                {project.phases?.length ? (
+                  <div className="mt-5 space-y-4">
+                    {project.phases.map((phase) => (
+                      <section
+                        key={phase.title}
+                        className="rounded-xl border border-slate-700 bg-slate-900/70 p-4"
+                      >
+                        <div className="flex flex-wrap items-center justify-between gap-2">
+                          <p className="text-sm font-semibold text-slate-100">{phase.title}</p>
+                          <span className="rounded-full bg-sky-500/15 px-2.5 py-1 text-[11px] font-medium text-sky-300">
+                            {phase.period}
+                          </span>
+                        </div>
+                        <p className="mt-1 text-xs text-sky-300">{phase.subtitle}</p>
+
+                        <div className="mt-3 space-y-2">
+                          <p className="text-xs font-semibold text-slate-400">내 역할</p>
+                          <ul className="space-y-1.5 text-xs text-slate-300">
+                            {phase.responsibilities.map((responsibility) => (
+                              <li key={responsibility} className="flex items-start gap-2">
+                                <span className="mt-1 h-1 w-1 flex-shrink-0 rounded-full bg-sky-400" />
+                                <span>{responsibility}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className="mt-3">
+                          <p className="text-xs font-semibold text-slate-400">사용 기술</p>
+                          <div className="mt-2 flex flex-wrap gap-2">
+                            {phase.tech.map((tech) => (
+                              <span
+                                key={tech}
+                                className="rounded-full bg-slate-800 px-2.5 py-1 text-[11px] text-slate-100 ring-1 ring-slate-700/70"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </section>
+                    ))}
+                  </div>
+                ) : null}
 
                 {project.achievements && (
                   <div className="mt-4 space-y-2">

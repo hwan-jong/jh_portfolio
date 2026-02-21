@@ -13,8 +13,7 @@ export default function Skills() {
         'React Hook Form',
         'DevExtreme',
         'Bootstrap 5',
-        'Nx (모노레포)',
-        'pnpm',
+        'Nx (모노레포) · pnpm',
       ],
     },
     {
@@ -25,8 +24,7 @@ export default function Skills() {
         'Spring Security',
         'Spring Transaction',
         'MyBatis',
-        'C#',
-        '.NET 6.0',
+        'C# · .NET 6.0',
         'ASP.NET Core',
         'Dapper',
         'SQL Server',
@@ -56,7 +54,7 @@ export default function Skills() {
               대학/공공기관 정보시스템의 구축·고도화 프로젝트에서 직접 사용하며,
               팀과 서비스의 맥락에 맞게 표준화·재사용·성능을 함께 고려했습니다.
               <br />
-              프론트(WebSquare/React)부터 백엔드(Spring/.NET), 트랜잭션·보안·성능까지 end-to-end로 다뤄왔습니다.
+              프론트(WebSquare/React) 협업 경험을 바탕으로 백엔드(Spring/.NET), 트랜잭션·보안·성능을 운영 관점에서 다뤄왔습니다.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 px-4 py-3 text-xs text-slate-300 shadow-sm">

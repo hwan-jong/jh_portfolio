@@ -18,6 +18,7 @@ export default function Navbar() {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   return (
@@ -35,7 +36,9 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-semibold text-slate-100">Portfolio</span>
-            <span className="text-[11px] text-slate-400">Frontend / Full-stack Developer</span>
+            <span className="text-[11px] text-slate-400">
+              Java Backend Developer (Full-stack 경험)
+            </span>
           </div>
         </div>
 

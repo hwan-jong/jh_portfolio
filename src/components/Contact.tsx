@@ -1,5 +1,3 @@
-import { LIVE_URL } from '@/lib/constants'
-
 export default function Contact() {
   return (
     <section id="contact" className="bg-slate-950 py-20 px-4">
@@ -17,47 +15,20 @@ export default function Contact() {
             문제를 빠르게 정의하고, 현실적인 범위에서 꾸준히 개선해 나가는 방식으로 함께하겠습니다.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-8 flex flex-col items-center justify-center gap-4">
             <a
-              href={LIVE_URL}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=pass1039@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-sky-500/60 bg-sky-500/10 px-4 py-2 text-xs font-medium text-sky-300 transition hover:border-sky-400 hover:bg-sky-500/20 hover:text-sky-200"
-            >
-              <span aria-hidden>🔗</span>
-              포트폴리오 배포 사이트
-            </a>
-          </div>
-
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-            <a
-              href="mailto:pass1039@naver.com"
               className="inline-flex items-center justify-center rounded-full bg-sky-500 px-7 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400"
             >
               이메일로 연락하기
             </a>
-            <div className="flex gap-3">
-              <a
-                href="https://github.com/hwan-jong"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-sky-400 hover:text-sky-200"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/hwan-jong/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-sky-500/70 bg-slate-900/70 px-4 py-2 text-xs font-medium text-sky-300 transition hover:border-sky-300 hover:text-sky-100"
-              >
-                LinkedIn
-              </a>
-            </div>
+            <p className="text-sm font-medium text-slate-200">pass1039@gmail.com</p>
           </div>
 
           <p className="mt-6 text-xs text-slate-500">
-            연락은 이메일 또는 LinkedIn으로 부탁드립니다.
+            연락은 이메일로 부탁드립니다.
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 export default function About() {
   const highlights = [
     '대학/공공기관 정보시스템 구축·고도화 프로젝트 경험',
-    '복잡한 업무 프로세스의 흐름 정의·연계 및 데이터 정합성 책임 관리 경험',
+    '복잡한 업무 프로세스를 기능 단위로 구조화하고, 저장/검증/롤백 기준을 정리해 정합성 이슈를 줄인 경험',
     'Java/Spring 구축과 .NET/React 고도화 경험을 모두 보유',
   ]
 
@@ -30,7 +30,7 @@ export default function About() {
       period: '2022.02 ~ 2024.09',
       title: '마산대학교 차세대 통합정보시스템 구축 용역',
       description:
-        '대학 통합 정보시스템 구축. 학사업무 개발 및 현장실습 파트 전체 흐름·정합성 책임 관리',
+        '대학 통합 정보시스템 구축. 학사업무 개발 및 현장실습 파트 업무 흐름 정리, 데이터 연계/정합성 이슈 최소화',
     },
     {
       period: '2021.11 ~ 2022.02',
@@ -49,7 +49,7 @@ export default function About() {
           <h2 className="mt-3 text-3xl font-bold md:text-4xl">
             아키텍처와 성능을 고민하며
             <br />
-            확장 가능한 시스템을 구축하는 개발자입니다.
+            운영형 백엔드 시스템을 개선하는 개발자입니다.
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-slate-300 md:text-base">
             단순히 기능을 구현하는 것을 넘어, 사용자의 업무가 자연스럽게 이어지고 운영까지 안정적인
@@ -57,6 +57,8 @@ export default function About() {
             <br />
             신규 구축부터 고도화, 인증 기능 도입까지의 경험을 바탕으로 요구사항을 구조화하고,
             데이터 정합성과 성능을 함께 챙기는 개발을 지향합니다.
+            <br />
+            데이터가 신뢰되어야 운영이 자동화된다고 생각해, 정합성과 예외 처리를 특히 신경 씁니다.
           </p>
 
           <ul className="mt-6 space-y-3 text-sm text-slate-200 md:text-base">
@@ -89,9 +91,9 @@ export default function About() {
             </div>
 
             <div className="mt-6 rounded-2xl border border-slate-700 bg-slate-900/60 p-4 text-xs text-slate-300 md:text-sm">
-              강점 키워드
+              강점 키워드:
               <span className="mx-1 font-semibold text-sky-300">
-                업무 흐름/정합성 책임 · 성능 개선 · 인증/보안 · 협업/문서화
+                업무 흐름/정합성 · 성능 개선 · 인증/보안 · 협업/문서화
               </span>
             </div>
           </div>
